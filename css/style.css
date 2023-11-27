@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#grid_wrapper {
+
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 70px 55px 200px 200px 100px;
+    grid-template-areas:
+    "hea hea hea"
+    "nav nav nav"
+    "se1 se1 se2"
+    "se3 se4 se4"
+    "foo foo foo"
+    ;
+}
+
+header {
+    background: beige;
+    grid-area: hea;
+    margin: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    font-size: 30px;
+    color: dimgray;
+}
+
+nav {
+    background: beige;
+    grid-area: nav;
+    margin: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+#section_1 {
+    background: green;
+    grid-area: se1;
+    margin: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section_2 {
+    background: orange;
+    grid-area: se2;
+    margin: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section_3 {
+    background: yellow;
+    grid-area: se3;
+    margin: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section_4 {
+    background: blue;
+    grid-area: se4;
+    margin: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background: purple;
+    grid-area: foo;
+    margin: 2px;
+}
